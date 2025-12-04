@@ -473,7 +473,7 @@ DWORD updateCRC32(unsigned char ch, DWORD crc)
 
 DWORD crc32buf(const char *buf, size_t len)
 {
-    register DWORD oldcrc32;
+    DWORD oldcrc32;
 
     oldcrc32 = 0xFFFFFFFF;
 
@@ -485,3 +485,4 @@ DWORD crc32buf(const char *buf, size_t len)
     return ~oldcrc32;
 
 }
+
